@@ -2,11 +2,16 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
       title: "Daily Prompt 👾",
+	  customCss: [ 
+        './src/styles/global.css',
+      ],
       social: [
         {
           icon: "github",
@@ -16,4 +21,8 @@ export default defineConfig({
       ], 
     }),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
