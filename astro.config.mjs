@@ -16,7 +16,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/DomeT99/daily-prompt",
+          href: "https://github.com/Domenico-Tenace-Open-Labs/daily-prompt",
         },
       ], 
     }),
